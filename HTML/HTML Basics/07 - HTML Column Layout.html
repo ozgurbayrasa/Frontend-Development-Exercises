@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Column Layout</title>
+    <style>
+        body{
+            background-color: rgb(235, 234, 234);
+        }
+        article{
+            column-count: 4;
+            column-gap: 0;
+            column-rule: 4px solid black;
+            width: 75vw;
+            margin: 0 auto;
+        }
+        header {
+            background-color: wheat;
+            column-span: all;
+            text-align: center;
+            border-bottom: 4px solid black;
+            border-top: 4px solid black;
+            text-transform: uppercase;
+            letter-spacing: .4em;
+            word-spacing: .8em;
+            font-weight: bold;
+        }
+        footer {
+            column-span: all;
+            text-align: center;
+            font-style: italic;
+        }
+        main > p{
+            margin: 0;
+            padding: 1em;
+            text-align: justify;
+            line-height: 1.25em;
+        }
+        footer{
+            border-top: 4px solid black;
+            padding: 2em 0;
+        }
+
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>The New York Times  </h1>
+        </header>
+        
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus, blanditiis labore atque sequi officia error tempora laborum quod corrupti fugiat aliquam molestias a vel ratione vitae praesentium distinctio fugit totam assumenda. Ea itaque dolorum ullam eveniet inventore temporibus, culpa unde architecto ipsa qui dolor officia similique, vel est velit deleniti, sint sunt enim saepe error quod blanditiis ab voluptatum! Beatae, aspernatur. Veniam iure quos ullam molestiae molestias commodi cum beatae, officia eius corporis blanditiis alias dolore, aut aliquam voluptate omnis, maiores ipsa totam doloremque ipsum necessitatibus vero enim quia. Sed ex, dignissimos autem nihil ducimus nam. Consectetur, eligendi quasi. Labore quae adipisci dolores quia explicabo aut, suscipit vel impedit quibusdam nobis fugit eos cupiditate odit, corporis perferendis cumque quasi!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus, blanditiis labore atque sequi officia error tempora laborum quod corrupti fugiat aliquam molestias a vel ratione vitae praesentium distinctio fugit totam assumenda. Ea itaque dolorum ullam eveniet inventore temporibus, culpa unde architecto ipsa qui dolor officia similique, vel est velit deleniti, sint sunt enim saepe error quod blanditiis ab voluptatum! Beatae, aspernatur. Veniam iure quos ullam molestiae molestias commodi cum beatae, officia eius corporis blanditiis alias dolore, aut aliquam voluptate omnis, maiores ipsa totam doloremque ipsum necessitatibus vero enim quia. Sed ex, dignissimos autem nihil ducimus nam. Consectetur, eligendi quasi. Labore quae adipisci dolores quia explicabo aut, suscipit vel impedit quibusdam nobis fugit eos cupiditate odit, corporis perferendis cumque quasi!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus, blanditiis labore atque sequi officia error tempora laborum quod corrupti fugiat aliquam molestias a vel ratione vitae praesentium distinctio fugit totam assumenda. Ea itaque dolorum ullam eveniet inventore temporibus, culpa unde architecto ipsa qui dolor officia similique, vel est velit deleniti, sint sunt enim saepe error quod blanditiis ab voluptatum! Beatae, aspernatur. Veniam iure quos ullam molestiae molestias commodi cum beatae, officia eius corporis blanditiis alias dolore, aut aliquam voluptate omnis, maiores ipsa totam doloremque ipsum necessitatibus vero enim quia. Sed ex, dignissimos autem nihil ducimus nam. Consectetur, eligendi quasi. Labore quae adipisci dolores quia explicabo aut, suscipit vel impedit quibusdam nobis fugit eos cupiditate odit, corporis perferendis cumque quasi!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus, blanditiis labore atque sequi officia error tempora laborum quod corrupti fugiat aliquam molestias a vel ratione vitae praesentium distinctio fugit totam assumenda. Ea itaque dolorum ullam eveniet inventore temporibus, culpa unde architecto ipsa qui dolor officia similique, vel est velit deleniti, sint sunt enim saepe error quod blanditiis ab voluptatum! Beatae, aspernatur. Veniam iure quos ullam molestiae molestias commodi cum beatae, officia eius corporis blanditiis alias dolore, aut aliquam voluptate omnis, maiores ipsa totam doloremque ipsum necessitatibus vero enim quia. Sed ex, dignissimos autem nihil ducimus nam. Consectetur, eligendi quasi. Labore quae adipisci dolores quia explicabo aut, suscipit vel impedit quibusdam nobis fugit eos cupiditate odit, corporis perferendis cumque quasi!</p>
+        </main>
+
+        <footer>
+            &copy; All rights reserved.
+        </footer>
+    </article>
+</body>
+</html>

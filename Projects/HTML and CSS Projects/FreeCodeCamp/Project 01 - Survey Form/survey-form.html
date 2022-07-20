@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCodeCamp Project - Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="title">Developer Survey Form</h1>
+        <p id="description">Hello Developer, input the following form.</p>
+    </header>
+
+    <main>
+        <form action="" id="survey-form">
+            <fieldset>
+                <legend>Developer's Information</legend>
+                <label id="name-label">Name <input type="text" name="name" id="name" placeholder="Input your name..." required></label>
+                <label id="email-label">Email <input type="email" name="email" id="email" placeholder="Input your email..." required minlength="8"></label>
+                <label id="number-label">Age <input type="number" name="number" id="number" min="13" max="120" placeholder="Input your age..." required></label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>More About Developer</legend>
+    
+                <p id="dropdown-description">What is the best programming language for you?</p>
+                <label>
+                    <select name="bestProgrammingLanguage" id="dropdown">
+                        <option value="" disabled selected>Select the best programming language</option>
+                        <option value="c">C</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="fortran">Fortran</option>
+                    </select>
+                </label>
+        
+                <p id="radio-description">Which background would  you prefer?</p>
+                <label><input type="radio" name="backgroundStyle" id="darkBg" value = "darkBg" required > Dark Background</label>
+                <label><input type="radio" name="backgroundStyle" value = "lightBg" id="lightBg" > Light Background</label>
+        
+                <p id="checkbox-description">Which ones would you like to learn?</p>
+                <label><input type="checkbox" name="webDevelopment" id="webDevelopment" value="webDevelopment"> Web Development</label>
+                <label><input type="checkbox" name="dataAnalysis" id="dataAnalysis" value="dataAnalysis"> Data Analysis</label>
+                <label><input type="checkbox" name="cyberSecurity" id="cyberSecurity" value="cyberSecurity"> Cyber Security</label>
+                <label><input type="checkbox" name="artificalIntelligence" id="artificalIntelligence" value="artificalIntelligence"> Artifical Intelligence</label>
+    
+    
+                <p id="textarea-description">How did you start programming?</p>
+    
+                <label><textarea name="textAreaStory" id="textAreaStory" rows="10" placeholder="Tell us..."></textarea></label>
+    
+            </fieldset>
+    
+            
+    
+            
+            <input type="submit" value="SUBMIT" id="submit">
+            
+    
+        </form>
+    </main>
+    
+</body>
+</html>

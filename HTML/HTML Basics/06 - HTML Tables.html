@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 - HTML Tables</title>
+    <style>
+        body{
+            
+            background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            height: 1080px;
+
+        }
+        tr, td, th, table{
+            border: 4px solid rgb(1, 1, 65);
+            border-collapse: collapse;
+            font-family: 'Inter', sans-serif;
+        }
+        tr, td, th{
+            padding: 25px;
+        }
+        thead{
+            background  : linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+            text-align: center;
+            
+        }
+        tbody{
+            background-color: white;
+            vertical-align: center;
+            background-image: url(taped_banana_duck.jpg);
+            background-repeat: no-repeat;
+        }
+        tfoot{
+            background: linear-gradient(280deg, rgb(255, 200, 200), rgb(240, 255, 209) );
+            background-color: rgb(194, 194, 194);
+            text-align: end;
+        }
+        img{
+            max-width: 200px;
+        }
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Inter:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">LOREM </th>
+                <th>LOREM </th>
+                <th>LOREM </th>
+                <th>LOREM </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Maiores, repudiandae?</td>
+                <td><img src="random_logo.png" alt="Random Logo"></td>
+                <td>Repellendus, architecto?</td>
+                <td>Explicabo, dicta.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Illo, libero!</td>
+                <td>Harum, corrupti.</td>
+                <td>Tenetur, voluptatibus.</td>
+                <td>Praesentium, quam.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Lorem, ipsum.</td>
+                <td>Deleniti, perspiciatis.</td>
+                <td>Nesciunt, perferendis!</td>
+                <td>Eligendi, in!</td>
+                <td>Maxime, quos!</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Deleniti, perspiciatis.</td>
+                <td>Nesciunt, perferendis!</td>
+                <td>Eligendi, in!</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Itaque, corrupti saepe.</td>
+                <td>Laudantium, modi maxime.</td>
+                <td>Ipsum, eaque aspernatur.</td>
+                <td>Quod, fugiat natus!</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

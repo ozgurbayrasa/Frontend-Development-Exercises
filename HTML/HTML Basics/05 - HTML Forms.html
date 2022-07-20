@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    
+    <!-- form element takes the form and contains different types of input elements. -->
+    <form action="">
+        <!-- <label> makes clickable areas for user. -->
+        <!--  for must be equal to the id for binding. --> 
+        <label for="firstName">First Name:</label> <br>
+        <input type="text" name="firstName" id="firstName"> <br>
+
+        <label for="lastName">Last Name:</label> <br>
+        <input type="text" name="lastName" id="lastName"> <br>
+    </form>
+
+    <form action="">
+
+        <!--  name attributes must be equal for same group. -->
+
+        <h2>Favourite Language</h2>
+
+        <input type="radio" name="fav_lang" id="english" value="English">
+        <label for="english">English</label><br>
+
+        <input type="radio" name="fav_lang" id="deutch" value="Deutch">
+        <label for="deutch">Deutch</label><br>
+
+        <input type="radio" name="fav_lang" id="turkish" value="Turkish">
+        <label for="turkish">Turkish</label><br>
+
+    </form>
+
+    <form action="">
+
+        <!--  name attributes must be different. -->
+
+        <h2>Extra</h2>
+
+        <input type="checkbox" name="corn" id="corn" value="Corn">
+        <label for="corn">Corn .99$</label><br>
+
+        <input type="checkbox" name="cheese" id="cheese" value="Cheese">
+        <label for="cheese">Cheese 2.99$</label><br>
+
+        <input type="checkbox" name="chicken" id="chicken" value="Chicken">
+        <label for="chicken">Chicken  5.99$</label><br>
+        
+    </form>
+
+    <form action="#">
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.write(document.lastModified);
+    </script>
+    <button type="button"
+    onclick="alert('You clicked the button.')">
+    Click Me!</button>
+</body>
+</html>

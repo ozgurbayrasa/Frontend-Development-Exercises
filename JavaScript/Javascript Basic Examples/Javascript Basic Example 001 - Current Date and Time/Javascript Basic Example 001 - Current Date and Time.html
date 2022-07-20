@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic Example 001 - Current Date and Time</title>
+</head>
+<body>
+    <h1>Current Date and Time</h1>
+    <script>
+        now = new Date();
+        localtime = now.toString();
+        utctime = now.toUTCString();
+        
+        document.write("<p><strong>Local Time: </strong> " + localtime + "</p>");
+       
+        document.write("<p><strong>UTC Time: </strong> " + utctime + "</p>");
+
+        hours = now.getHours();
+        mins = now.getMinutes();
+        seconds = now.getSeconds();
+        milliseconds = now.getMilliseconds();
+
+        document.write("<h2>" + hours + ":" + mins + ":" + seconds + ":" + milliseconds + "</h2>")
+
+        document.write("<h2>" + hours + ":" + mins + ":" + seconds + ":" + milliseconds + "</h2>")
+
+        now2 = new Date();
+
+        milliseconds2 = now2.getMilliseconds();
+
+        document.write("<h2>" + hours + ":" + mins + ":" + seconds + ":" + milliseconds2 + "</h2>")
+    </script>
+</body>
+</html>

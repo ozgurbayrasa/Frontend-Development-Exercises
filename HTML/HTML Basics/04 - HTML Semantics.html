@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantics</title>
+</head>
+<body>
+    
+    <!-- There is main at the top, than header semantic with image, h1 and nav semantic. There are two article semantics after that, with two sections in it.
+    
+    In the first article in section 1 there is time semantic, used with times and in section 2 there is mark semantic to make the text highlihted.
+    
+    In the second article, section 1 has an image with caption (figure and figcaption), section 2 has a details and summary semantics.
+    At the end of the document, footer semantic used with address semantic in it. -->
+
+    <main>
+        MAIN
+        <header>
+
+            <img src="random_logo.png" alt="Random Logo" width="400px">
+            <h1>Random Logo Co.</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">LOREM</a></li>
+                    <li><a href="#">LOREM</a></li>
+                    <li><a href="#">LOREM</a></li>
+                    <li><a href="#">LOREM</a></li>
+                    <li><a href="#">LOREM</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <article>
+            <header>
+                Article 1 Header
+            </header>
+            <section>
+                <header>
+                    Section 1 Header <time>13:00</time>
+                </header>
+            </section>
+            <section>
+                <header>
+                    Section 2 Header <mark>marked Text</mark>
+                </header>
+            </section>
+        </article>
+
+        <article>
+            <header>
+                Article 2 Header
+            </header>
+            <section>
+                <header>
+                    Section 1 Header
+                    <figure>
+                        <img src="taped_banana_duck.jpg" alt="Taped Banana Duck Head">
+                        <figcaption>Banana Duck Head</figcaption>
+                    </figure>
+                </header>
+            </section>
+            <section>
+                <header>
+                    Section 2 Header
+                </header>
+                <details> 
+                    <summary>
+                        Details Below
+                    </summary>
+                    Lorem ipsum dolor sit amet.
+                </details>
+            </section>
+        </article>
+
+        <aside>
+            Related links of articles - ASIDE
+        </aside>
+
+        <footer>
+            Footer
+            <address>Lorem ipsum dolor sit. ADDRESS</address>
+        </footer>
+    </main>
+
+</body>
+</html>
