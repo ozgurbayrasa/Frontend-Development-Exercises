@@ -1,0 +1,154 @@
+:root{
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+
+header#logo{
+  padding: 2em 0 1em 0;
+  margin: 0;
+  background-color: lightblue;
+}
+header > h1#title{
+  font-size: 3.5rem;
+  letter-spacing: .15rem;
+  text-align: center;
+  border: 10px solid black;
+  border-radius: .5em;
+  padding: .5em;
+  width: 60%;
+  margin: .5em auto;
+  background-color: lightgreen;
+}
+
+ul#navbar{
+  list-style-type: none;
+  background-color: DarkBlue;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  padding: 1.4em 4.5em;
+  border: 10px solid black;
+}
+
+
+ul#navbar > li > a{
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: rgba(255,255,255,0.65);
+  transition-duration: 0.25s;
+}
+
+ul#navbar > li > a:hover{
+  color: rgba(255,255,255,1);
+  transition-duration: 0.25s;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+main.main-container{
+  width: 60%;
+  margin: 0 auto;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  padding: 1em 1em;
+  font-size: 1.20rem;
+  text-align: justify;
+}
+
+
+#absolute{
+  position: absolute;
+  top: 20em;
+  z-index: -1;
+}
+
+#fixed {
+  position: fixed;
+  top: 20em;
+  right: 0;
+}
+
+#relative{
+  position: relative;
+  top: -.1em;
+  left: -.2em;
+  font-size: 1.2em;
+}
+
+img{
+  border: 5px solid black;
+  float: right;
+  margin: 1em 0 1em 1em;
+  vertical-align: middle;
+}
+
+aside{
+  width: 18%;
+  margin: 1%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 5px solid black;
+  text-align: center;
+  padding: 2.5em 1em;
+  background-color: wheat;
+  height: 10em;
+}
+
+footer{
+  position: relative;
+  z-index: 1;
+  border: 10px solid black;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: LightBlue;
+  font-size: 1.75rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer > *{
+  width: 300px;
+  margin: 0 auto;
+}
+
+#social-media-icons{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+address>a{
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  transition-duration: 0.30s;
+}
+address>a:hover{
+  color: black;
+  transition-duration: 0.30s;
+}
+
+svg{
+  fill: rgba(0,0,0,0.4);
+  transition-duration: 0.30s;
+}
+
+svg:hover{
+  fill: rgba(0,0,0,1);
+  transition-duration: 0.30s;
+}
+
