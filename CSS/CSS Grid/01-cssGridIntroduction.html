@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            width: 75vw;
+            margin: auto;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+        }
+        
+        [class^="grid"]{
+            /* Grid container created.*/
+            display: grid;
+
+            /* Gutter of grid. Vertically and horizontally*/
+            grid-gap: 0.5em 2em; 
+
+            border: 4px solid black;
+            padding: .5em;
+            margin-top: 1.5em;
+        }
+
+        [class^="grid"] > div{
+            background-color: rgb(138, 171, 249);
+            padding: .4em;
+        }
+
+        /* Setting grid sizes for grid1 and grid2*/
+        .grid1{
+            grid-template-columns: 1fr 2fr 3fr;
+            grid-template-rows: 2fr 1fr;
+        }
+
+        .grid2{
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 200px 200px;
+        }
+
+    </style>
+    
+    <title>01 - Css Grid Introduction</title>
+</head>
+<body>
+
+    <article class="grid1">
+        <div>(2fr row) 1fr</div>
+        <div>2fr</div>
+        <div>3fr</div>
+        <div>(1fr row) 1fr</div>
+        <div>2fr</div>
+        <div>3fr</div>
+    </article>
+
+
+    <article class="grid2">
+        <div>(200px row) 200px</div>
+        <div>1fr</div>
+        <div>200px</div>
+        <div>(200px row) 200px</div>
+        <div>1fr</div>
+        <div>200px</div>
+    </article>
+
+   
+    
+</body>
+</html>

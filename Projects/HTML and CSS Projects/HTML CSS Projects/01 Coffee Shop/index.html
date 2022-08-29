@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayrasa Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header" class="page-header">
+        <div class="title">
+            <h1>Bayrasa Coffee</h1>
+            <div class="slogan">The Coffee World</div>
+        </div>
+    </header>    
+
+    <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">
+            toggle menu
+        </button>
+        <div class="menu-dropdown">
+            <ul class="nav-menu">
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <aside id="hero" class="hero">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus rem mollitia fugit, nostrum dolorem! Molestiae aut ex nobis autem?
+    </aside>
+
+    <main id="main">
+        <div class="row">
+            <section class="column">
+                <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum dolorem explicabo quibusdam, sequi ipsum doloribus architecto ab nobis eveniet. <a href="#">Lorem, ipsum.</a> quas at corrupti!</p>
+            </section>
+            <section class="column">
+                <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum dolorem explicabo quibusdam, sequi ipsum doloribus architecto ab nobis eveniet. <a href="#">Lorem, ipsum.</a> quas at corrupti!</p>
+            </section>
+            <section class="column">
+                <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum dolorem explicabo quibusdam, sequi ipsum doloribus architecto ab nobis eveniet. <a href="#">Lorem, ipsum.</a> quas at corrupti!</p>
+            </section>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        (function () {
+         var button = document.getElementById('toggle-menu');
+         button.addEventListener('click', function(event) { 
+         event.preventDefault();
+         var menu = document.getElementById('main-menu');
+         menu.classList.toggle('is-open'); 
+         });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 Implicit Grid</title>
+
+    <!-- CSS Stylesheet -->
+    <style>
+        body {
+            background-color: #709b90;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .portfolio {
+            display: grid;
+
+            /* minmax: equal width but not smaller than 200px.*/
+            /* auto-fill: do not fill the remaining space */
+            /* auto-fit: Fill the remaining space for one line*/
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+           
+            /* Implicit Grid Rows */
+            grid-auto-rows: 1fr;  
+           
+            grid-gap: 1em;
+
+            grid-auto-flow: dense;
+        }
+
+        /* Featured class has 2x2 dimension. Others are 1x1.*/
+        .portfolio .featured {
+            grid-row: span 2; 
+            grid-column: span 2; 
+        }
+
+        .portfolio img {
+            object-fit: cover;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .portfolio > figure {
+            margin: 0; 
+        }
+
+        .portfolio > figure {
+            display: flex; 
+            flex-direction: column; 
+            margin: 0;
+        }
+
+        .portfolio figcaption {
+            padding: 0.3em 0.8em;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid Container  -->
+    <div class="portfolio">
+
+        <!-- Every figure is GRID ELEMENT -->
+        <figure class="featured">
+            <img src="example.jpg" alt="">
+            <figcaption>1- Lorem, ipsum.</figcaption>
+        </figure>
+        <figure>
+            <img src="example.jpg" alt="">
+            <figcaption>2- Ducimus, dolores.</figcaption>
+        </figure>
+        <figure class="featured">
+            <img src="example.jpg" alt="">
+            <figcaption>3- Sed, nihil.</figcaption>
+        </figure>
+        <figure>
+            <img src="example.jpg" alt="">
+            <figcaption>4- Id, illum!</figcaption>
+        </figure>
+        <figure class="featured">
+            <img src="example.jpg" alt="">
+            <figcaption>5- Autem, recusandae!</figcaption>
+        </figure>
+        <figure>
+            <img src="example.jpg" alt="">
+            <figcaption>6- Commodi, saepe.</figcaption>
+        </figure>
+        <figure>
+            <img src="example.jpg" alt="">
+            <figcaption>7- Assumenda, error.</figcaption>
+        </figure>
+
+    </div>
+    
+</body>
+</html>
