@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../01 Coffee Shop"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "02 Grid Responsive Project 2"
+	}
+}

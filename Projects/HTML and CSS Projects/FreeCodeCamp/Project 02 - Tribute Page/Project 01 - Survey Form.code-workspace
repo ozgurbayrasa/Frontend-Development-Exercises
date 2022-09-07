@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Project 01 - Survey Form"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project 02 - Tribute Page"
+	}
+}
