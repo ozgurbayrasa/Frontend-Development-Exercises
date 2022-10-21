@@ -12,7 +12,9 @@
     --color-3: #B55400;
     --color-4: #EEEEEE;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--color-1) ;
     font-family: 'Rajdhani', sans-serif;
